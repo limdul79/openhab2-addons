@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<thing:thing-descriptions bindingId="vrsmonitor"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:thing="http://eclipse.org/smarthome/schemas/thing-description/v1.0.0"
+	xsi:schemaLocation="http://eclipse.org/smarthome/schemas/thing-description/v1.0.0 http://eclipse.org/smarthome/schemas/thing-description-1.0.0.xsd">
+
+	<!-- Sample Thing Type -->
+	<thing-type id="departuremonitor">
+		<label>VRS Departure Monitor</label>
+		<description>Departure Monitor for stations in the VRS Area</description>
+		<config-description>
+			<parameter name="showId" type="text" required="true">
+				<label>VRS-Info ShowID</label>
+				<description><![CDATA[ID of the Departure Monitor<br />
+It's is part of the URL https://www.vrsinfo.de/abfahrtsmonitor/anzeige/vrs_info/Departuremonitor/show/vrs_info-showid/&lt;id&gt;.html]]>
+				</description>
+			</parameter>
+			<parameter name="refresh" type="integer" required="true" min="60">
+				<default>120</default>
+				<label>Refresh in seconds</label>
+				<description>The number of seconds between each data refresh. Minimum 60 seconds.</description>
+			</parameter>
+			<parameter name="departureCount" type="integer" required="true" min="1" max="20">
+				<default>5</default>
+				<label>Number of provided departures</label>
+				<description>The number of departures to be presented as channels.</description>
+			</parameter>
+		</config-description>
+	</thing-type>
+	<channel-type id="updatedType">
+		<item-type>DateTime</item-type>
+		<label>Updated</label>
+		<description>Data was updated at</description>
+		<state readOnly="true" />
+	</channel-type>
+	<channel-type id="direction">
+		<item-type>String</item-type>
+		<label>Direction</label>
+		<description>Direction of the departure</description>
+		<state readOnly="true" />
+	</channel-type>
+	<channel-type id="estimate">
+		<item-type>String</item-type>
+		<label>Estimated departure</label>
+		<description>Estimated time of departure</description>
+		<state readOnly="true" />
+	</channel-type>
+	<channel-type id="timetable">
+		<item-type>String</item-type>
+		<label>Planned departure</label>
+		<description>Departure time according to the timetable</description>
+		<state readOnly="true" />
+	</channel-type>
+	<channel-type id="delayed">
+		<item-type>Switch</item-type>
+		<label>Delayed</label>
+		<description>ON = not on time, OFF=on time</description>
+		<state readOnly="true" />
+	</channel-type>
+	<channel-type id="timestamp">
+		<item-type>DateTime</item-type>
+		<label>Timestamp</label>
+		<description>The timestamp of the departure</description>
+		<state readOnly="true" />
+	</channel-type>
+	<channel-type id="lineNumber">
+		<item-type>String</item-type>
+		<label>Line number</label>
+		<description>The number of the line</description>
+		<state readOnly="true" />
+	</channel-type>
+	<channel-type id="lineProduct">
+		<item-type>String</item-type>
+		<label>Line Product</label>
+		<description>The type of the line (light rail. bus etc.)</description>
+		<state readOnly="true" />
+	</channel-type>
+	<channel-type id="stopId">
+		<item-type>String</item-type>
+		<label>Stop ID</label>
+		<description>The technical id of the stop</description>
+		<state readOnly="true" />
+	</channel-type>
+	<channel-type id="stopName">
+		<item-type>String</item-type>
+		<label>Stop Name</label>
+		<description>The name of the stop</description>
+		<state readOnly="true" />
+	</channel-type>
+</thing:thing-descriptions>

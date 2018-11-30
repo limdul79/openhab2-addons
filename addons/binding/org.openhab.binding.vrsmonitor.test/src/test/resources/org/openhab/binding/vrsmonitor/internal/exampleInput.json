@@ -1,0 +1,93 @@
+{  
+   "updated":"30.11. 14:17:25",
+   "events":[  
+      {  
+         "stopPoint":{  
+            "ifopt":"de:05362:85111:1:12",
+            "name":"Wesseling"
+         },
+         "departure":{  
+            "estimate":"14:28",
+            "timetable":"14:25",
+            "timestamp":1543584537,
+            "delayed":true,
+            "day":0
+         },
+         "line":{  
+            "number":"16",
+            "product":"LightRail",
+            "direction":"Bad Godesberg Stadthalle"
+         }
+      },
+      {  
+         "stopPoint":{  
+            "ifopt":"de:05362:85111:1:12",
+            "name":"Wesseling"
+         },
+         "departure":{  
+            "estimate":"14:45",
+            "timetable":"14:45",
+            "timestamp":1543585500,
+            "delayed":false,
+            "day":0
+         },
+         "line":{  
+            "number":"16",
+            "product":"LightRail",
+            "direction":"Bad Godesberg Stadthalle"
+         }
+      },
+      {  
+         "stopPoint":{  
+            "ifopt":"de:05362:85111:1:12",
+            "name":"Wesseling"
+         },
+         "departure":{  
+            "timetable":"15:05",
+            "timestamp":1543586700,
+            "day":0
+         },
+         "line":{  
+            "number":"16",
+            "product":"LightRail",
+            "direction":"Bad Godesberg Stadthalle"
+         }
+      },
+      {  
+         "stopPoint":{  
+            "ifopt":"de:05362:85111:1:12",
+            "name":"Wesseling"
+         },
+         "departure":{  
+            "estimate":"15:25",
+            "timetable":"15:25",
+            "timestamp":1543587900,
+            "delayed":false,
+            "day":0
+         },
+         "line":{  
+            "number":"16",
+            "product":"LightRail",
+            "direction":"Bad Godesberg Stadthalle"
+         }
+      },
+      {  
+         "stopPoint":{  
+            "ifopt":"de:05362:85111:1:12",
+            "name":"Wesseling"
+         },
+         "departure":{  
+            "estimate":"15:45",
+            "timetable":"15:45",
+            "timestamp":1543589100,
+            "delayed":false,
+            "day":0
+         },
+         "line":{  
+            "number":"16",
+            "product":"LightRail",
+            "direction":"Bad Godesberg Stadthalle"
+         }
+      }
+   ]
+}
